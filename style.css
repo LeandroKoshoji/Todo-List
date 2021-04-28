@@ -39,6 +39,11 @@ input:focus{
 }
 i{
     color: #463f3a;
+    cursor: pointer;
+}
+.icons > * + *{
+    margin-left: 0.5rem;
+    
 }
 
 /* Header Settings */
@@ -93,8 +98,4 @@ header h1 {
     justify-content: space-between;
     align-items: center;
     font-size: 1.2rem;
-}
-
-.hidden {
-    display: none;
 }

@@ -8,7 +8,10 @@ const insetToDoIntoList = inputValue => {
         todoList.innerHTML += 
             `<li data-todo="${inputValue}">
                 <span>${inputValue}</span>
-                <i class="fas fa-trash-alt delete" data-trash="${inputValue}"></i>
+                <div class="icons">
+                    <i class="fas fa-check check" data-check="${inputValue}"></i>
+                    <i class="fas fa-trash-alt delete" data-trash="${inputValue}"></i>
+                </div>
             </li>    
             `
     }
@@ -32,10 +35,21 @@ const removeToDoFromDOM = isDeleteIncluded => {
     }
 }
 
+const addCheckedStyle = isCheckIncluded => {
+    if(isCheckIncluded) {
+        const dataCheck = event.target.dataset.check
+        const dataTodo = document.querySelector(`[data-todo="${dataCheck}"]`)
+        dataTodo.style.fontStyle = 'italic'
+        dataTodo.style.textDecoration ='line-through'
+    }
+}
+
 todoList.addEventListener('click', event => {
     const liClassList = event.target.classList
+    const isCheckIncluded = Array.from(liClassList).includes('check')
     const isDeleteIncluded = Array.from(liClassList).includes('delete')
 
+    addCheckedStyle(isCheckIncluded)
     removeToDoFromDOM(isDeleteIncluded)
 })
 
