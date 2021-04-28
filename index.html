@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leandro`s Todo List</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;700&display=swap" rel="stylesheet">  
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>To-do List</h1>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="todo-wrapper">
+                <div class="todo-search-container">
+                    <form class="form-search">
+                        <input type="text" id="searchInput" placeholder="Search to-do ..." autofocus>
+                    </form>
+                </div>    
+                <div class="todo-list-container">
+                    <ul class="todo-list">
+                        <li data-todo="to-do example">
+                            <span>to-do example</span>
+                            <i class="fas fa-trash-alt delete" data-trash="to-do example"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="todo-input-container">
+                    <form class="form-input">
+                        <input type="text" id="todoInput" placeholder="Add to-do">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
