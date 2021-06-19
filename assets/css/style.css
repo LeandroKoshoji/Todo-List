@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+    background-color: #14213d;
+    font-family: 'Roboto', sans-serif;
+    color: #FFF;
+}
+
+ul,li {
+    list-style: none;
+}
+button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+i {
+    font-size: 1.5rem;
+    color: #fca311;
+}
+.container {
+    width: min(90%, 60rem);
+    margin-inline: auto;
+}
+
+header {
+    margin-top: 1rem;
+    width: 100%;
+    height: 7.5rem;
+}
+
+.header-text {
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.todo-wrapper {
+    min-height: calc(100vh - 120px);
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.forms-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: min(90%, 500px);
+    border-radius: 10px;
+    background-color: #e5e5e5;
+    padding: .5rem 1rem;
+    margin: 1rem;
+}
+
+input{
+    background-color: transparent;
+    font-size: 1.1rem;
+    width: 90%;
+    border: none;
+    outline: none;
+    padding: 0 .5rem;
+}
+
+input:focus{
+    border-bottom: 1px solid #14213d;
+}
+
+.search-todo-form { /* switch */
+    display: none;
+}
+
+.show-search-form-button { /* switch */
+    display: block;
+    background-color: #fca311;
+    border-radius: 10px;
+    
+}
+.show-search-form-icon {
+    font-size: 2rem;
+    color: #FFF;
+    padding: .5rem;
+}
+
+.todo-list-container {
+    margin-top: 1rem;
+    border-top: 1px solid #fca311;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list-container ul {
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.todo-item {
+    font-weight: 300;
+    display: flex;
+    justify-content: space-between;
+    background-color: #e5e5e5;
+    width: min(90%, 500px);
+    margin: .5rem 0;
+    font-size: 1.1rem;
+    padding: .8rem;
+    border-radius: 10px;
+    color: #000;
+}
