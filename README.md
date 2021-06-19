@@ -1,3 +1,8 @@
-# Todo List created to measure my progress in Vanilla JS!
+<h1 align="center">
+    To-do List
+</h1>
 
+<p align="center">
+    <img src="assets/todo-list.gif" />
+</p>
  

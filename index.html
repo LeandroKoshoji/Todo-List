@@ -3,45 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leandro`s Todo List</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;700&display=swap" rel="stylesheet">  
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>To-do List</h1>
+            <h1 class="header-text">To-do List</h1>
         </div>
     </header>
     <section>
         <div class="container">
             <div class="todo-wrapper">
-                <div class="todo-search-container">
-                    <form class="form-search">
-                        <input type="text" id="searchInput" placeholder="Search to-do ..." >
+                <div class="forms-container">
+                    <form class="add-todo-form">
+                        <input type="text" name="addTodo" placeholder="Add to-do" maxlength="40" autofocus>
+                        <button type="submit"><i class="fas fa-plus"></i></button>
                     </form>
-                </div>    
-                <div class="todo-list-container">
-                    <ul class="todo-list">
-                        <li data-todo="to-do example">
-                            <span>to-do example</span>
-                            <div class="icons">
-                                <i class="fas fa-check check" data-check="to-do example"></i>
-                                <i class="fas fa-trash-alt delete" data-trash="to-do example"></i>
-                            </div>
-                        </li>
-                    </ul>
+                    <form class="search-todo-form invisible">
+                        <input type="text" name="searchTodo" placeholder="Search to-do">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                    <button class="show-search-form-button"><i class="fas fa-search show-search-form-icon"></i></button>
                 </div>
-                <div class="todo-input-container">
-                    <form class="form-input">
-                        <input type="text" id="todoInput" placeholder="Add to-do" autofocus>
-                    </form>
+                <div class="todo-list-container">
+                    <ul class="todo">
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
-    <script src="app.js"></script>
+    <script src="assets/js/app.js"></script>
 </body>
 </html>
