@@ -20,32 +20,17 @@
             <div class="todo-wrapper">
                 <div class="forms-container">
                     <form class="add-todo-form">
-                        <input type="text" name="add-todo" placeholder="Add to-do" autofocus>
+                        <input type="text" name="addTodo" placeholder="Add to-do" maxlength="40" autofocus>
                         <button type="submit"><i class="fas fa-plus"></i></button>
                     </form>
-                    <form class="search-todo-form">
-                        <input type="text" name="search-todo" placeholder="Search to-do">
+                    <form class="search-todo-form invisible">
+                        <input type="text" name="searchTodo" placeholder="Search to-do">
                         <button type="submit"><i class="fas fa-search"></i></button>
                     </form>
                     <button class="show-search-form-button"><i class="fas fa-search show-search-form-icon"></i></button>
                 </div>
                 <div class="todo-list-container">
-                    <ul>
-                        <li class="todo-item">
-                            <span>Texto de Exemplo</span> 
-                            <div class="icon-container">
-                                <i class="fas fa-check"></i>
-                                <i class="fas fa-trash-alt"></i>
-                            </div>
-                        </li>
-
-                        <li class="todo-item">
-                            <span>Exemplo de texto</span> 
-                            <div class="icon-container">
-                                <i class="fas fa-check"></i>
-                                <i class="fas fa-trash-alt"></i>
-                            </div>
-                        </li>
+                    <ul class="todo">
                     </ul>
                 </div>
             </div>

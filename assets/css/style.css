@@ -5,6 +5,7 @@
 }
 body {
     min-height: 100vh;
+    height: 100%;
     background-color: #14213d;
     font-family: 'Roboto', sans-serif;
     color: #FFF;
@@ -30,7 +31,6 @@ i {
 }
 
 header {
-    margin-top: 1rem;
     width: 100%;
     height: 7.5rem;
 }
@@ -39,10 +39,11 @@ header {
     font-size: 3.5rem;
     font-weight: 700;
     text-align: center;
+    padding-top: 2rem ;
 }
 
 .todo-wrapper {
-    min-height: calc(100vh - 120px);
+    height: calc(100vh - 136px);
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -81,7 +82,7 @@ input:focus{
     border-bottom: 1px solid #14213d;
 }
 
-.search-todo-form { /* switch */
+.search-todo-form.invisible { /* switch */
     display: none;
 }
 
